@@ -83,3 +83,29 @@ end
 
 
 
+=begin You’ve defined a method called `by_three?` that takes a number `n` and returns `true` if `n` is divisible by 3 and `false` otherwise. It uses the modulo operator `%` to check for divisibility. 
+=end
+
+def by_three?(n)
+    return n % 3 == 0
+end
+
+
+#defing block in ruby
+1.times do
+    puts "This block is being executed."
+end
+puts {"Hello from the block!"}
+
+# sort! method in ruby
+num = [5, 2, 9, 1, 5, 6]
+num.sort!
+puts num  # output: [1, 2, 5, 5, 6, 9]
+
+
+# sorting an array of strings in reverse alphabetical order
+fruits = ["banana", "apple", "orange", "grape"]
+fruits.sort! do |a, b|
+    b <=> a
+    
+puts fruits  # output: ["orange", "grape", "banana", "apple"]
